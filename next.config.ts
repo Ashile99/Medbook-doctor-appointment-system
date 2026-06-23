@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
   },
   basePath: isGithubActions ? `/${repo}` : '',
   assetPrefix: isGithubActions ? `/${repo}/` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubActions ? `/${repo}` : '',
+  }
 };
 
 export default nextConfig;

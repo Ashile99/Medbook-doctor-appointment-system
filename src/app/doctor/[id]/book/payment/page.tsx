@@ -17,7 +17,7 @@ export default function PaymentPage({ params }: { params: { id: string } }) {
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="MedBook Logo" width={120} height={32} className="h-6 md:h-8 object-contain" />
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MedBook Logo" width={120} height={32} className="h-6 md:h-8 object-contain" />
             <span className="text-lg font-bold text-[#102A43]">MedBook</span>
           </Link>
         </div>
