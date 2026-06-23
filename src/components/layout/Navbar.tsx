@@ -5,6 +5,7 @@ import { Menu, User, X, ChevronRight } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -50,7 +51,7 @@ export default function Navbar() {
         
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2 pl-2">
-          <img src="/logo.png" alt="MedBook Logo" className="h-7 w-auto object-contain" />
+          <Image src="/logo.png" alt="MedBook Logo" width={120} height={32} className="h-7 w-auto object-contain" />
           <span className="text-xl font-extrabold text-[#102A43] tracking-tight hidden sm:block">MedBook</span>
         </Link>
         

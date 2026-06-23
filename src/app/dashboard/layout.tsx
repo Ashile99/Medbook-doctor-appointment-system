@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Calendar as CalendarIcon, Clock, Activity, User, FileText, Settings, LogOut } from 'lucide-react';
+import Image from 'next/image';
 
 export default function DashboardLayout({
   children,
@@ -32,7 +33,7 @@ export default function DashboardLayout({
       <aside className="w-full md:w-64 bg-white/60 backdrop-blur-2xl border-r border-white/40 shadow-[4px_0_24px_-8px_rgba(0,0,0,0.05)] flex flex-col hidden md:flex shrink-0">
         <div className="p-6">
           <Link href="/" className="flex items-center gap-2 mb-10">
-            <img src="/logo.png" alt="MedBook Logo" className="h-6 w-auto object-contain" />
+            <Image src="/logo.png" alt="MedBook Logo" width={120} height={32} className="h-6 w-auto object-contain" />
             <span className="text-xl font-bold text-[#102A43]">MedBook</span>
           </Link>
 

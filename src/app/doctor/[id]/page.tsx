@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Share2, Heart, ShieldCheck, Lock, Award } from 'lucide-react';
 import { useState, use } from 'react';
+import Image from 'next/image';
 
 export default function DoctorProfile({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -20,7 +21,7 @@ export default function DoctorProfile({ params }: { params: Promise<{ id: string
       {/* Top Bar (Mobile Only) */}
       <header className="md:hidden flex justify-between items-center p-6 bg-transparent absolute top-0 left-0 right-0 z-10">
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <img src="/logo.png" alt="MedBook Logo" className="h-6 md:h-8 object-contain drop-shadow-md" />
+          <Image src="/logo.png" alt="MedBook Logo" width={120} height={32} className="h-6 md:h-8 object-contain drop-shadow-md" />
           <span className="text-xl font-bold text-white drop-shadow-md">MedBook</span>
         </Link>
         <div className="flex gap-4 text-white">

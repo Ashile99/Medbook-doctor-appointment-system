@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Bell, Search, MapPin, HeartPulse, Stethoscope, Brain, Pill as Tooth, Clock, ShieldCheck, CalendarCheck, Users, User, Star, ArrowRight, Video, FileText, CheckCircle2 } from "lucide-react";
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useRef, useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -52,7 +53,7 @@ export default function Home() {
       {/* Top Bar (Mobile Only) */}
       <header className="md:hidden flex justify-between items-center p-6 bg-white/40 backdrop-blur-xl border-b border-white/30 sticky top-0 z-50">
         <Link href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="MedBook Logo" className="h-6 md:h-8 object-contain" />
+          <Image src="/logo.png" alt="MedBook Logo" width={120} height={32} className="h-6 md:h-8 object-contain" />
           <span className="text-xl font-bold text-[#102A43]">MedBook</span>
         </Link>
         <Link href="/dashboard" className="text-[#627D98] hover:text-primary transition-colors block">
