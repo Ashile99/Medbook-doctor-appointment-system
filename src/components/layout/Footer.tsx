@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MedBook Logo" width={180} height={40} className="h-10 w-auto object-contain" />
+              <Image src="/logo.png" alt="MedBook Logo" width={180} height={40} className="h-10 w-auto object-contain" />
             </Link>
             <p className="text-text-muted mb-6">
               Book appointments with top doctors, read reviews, and manage your health seamlessly with MedBook.

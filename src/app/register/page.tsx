@@ -11,7 +11,7 @@ export default function Register() {
         <div className="md:w-1/2 p-8 sm:p-12 lg:p-16 flex flex-col justify-center order-2 md:order-1">
           <div className="mb-8 text-center md:text-left">
             <Link href="/" className="inline-block mb-8 md:hidden">
-              <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MedBook" width={160} height={40} className="h-8 w-auto" />
+              <Image src="/logo.png" alt="MedBook" width={160} height={40} className="h-8 w-auto" />
             </Link>
             <h1 className="text-3xl font-bold text-text-main mb-2">Create Account</h1>
             <p className="text-text-muted">Join MedBook to manage your health seamlessly.</p>
@@ -89,7 +89,7 @@ export default function Register() {
         <div className="md:w-1/2 bg-accent p-12 text-white flex flex-col justify-center relative overflow-hidden hidden md:flex order-1 md:order-2">
           <div className="absolute top-8 right-8">
             <Link href="/">
-              <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MedBook" width={160} height={40} className="h-8 w-auto brightness-0 invert" />
+              <Image src="/logo.png" alt="MedBook" width={160} height={40} className="h-8 w-auto brightness-0 invert" />
             </Link>
           </div>
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551076805-e18690c5e53b?q=80&w=2083&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20" />

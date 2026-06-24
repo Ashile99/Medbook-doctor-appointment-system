@@ -15,7 +15,7 @@ export default function ForgotPassword() {
       <div className="bg-white rounded-[2.5rem] shadow-xl shadow-primary/5 border border-border-color/30 w-full max-w-lg overflow-hidden p-8 sm:p-12 flex flex-col justify-center">
         <div className="mb-10 text-center">
           <Link href="/" className="inline-block mb-8">
-            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MedBook" width={160} height={40} className="h-8 w-auto mx-auto" />
+            <Image src="/logo.png" alt="MedBook" width={160} height={40} className="h-8 w-auto mx-auto" />
           </Link>
           <h1 className="text-3xl font-bold text-text-main mb-2">Reset Password</h1>
           <p className="text-text-muted">Enter your email address and we&apos;ll send you a link to reset your password.</p>
