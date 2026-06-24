@@ -51,7 +51,7 @@ export default function Navbar() {
         
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2 pl-2">
-          <Image src="/logo.png" alt="MedBook Logo" width={120} height={32} className="h-7 w-auto object-contain" />
+          <Image src={`${(process.env.NEXT_PUBLIC_BASE_PATH && process.env.NEXT_PUBLIC_BASE_PATH != "undefined") ? process.env.NEXT_PUBLIC_BASE_PATH : ""}/logo.png`} alt="MedBook Logo" width={120} height={32} className="h-7 w-auto object-contain" />
           <span className="text-xl font-extrabold text-[#102A43] tracking-tight hidden sm:block">MedBook</span>
         </Link>
         
