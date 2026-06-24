@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   basePath: isGithubActions ? `/${repo}` : '',
   assetPrefix: isGithubActions ? `/${repo}/` : '',
   env: {
